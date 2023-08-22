@@ -7,15 +7,11 @@ const app = express();
 
 const router = express.Router();
 
+import index from './routes/index.js';
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:false}));
 
-const create = router.post('/', (req,res,next) => {
-    res.status(201).send(req.body);
-
-});
-
-
-app.use('/login', create)
+app.use('/', index)
 
 export default app;
