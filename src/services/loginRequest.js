@@ -1,6 +1,10 @@
 'use strict'
 
 import fetch from 'node-fetch';
+import Joi from 'joi';
+import LoginReqDTOSchema from '/home/loadt/node/src/models/LoginReqDTOSchema.js';
+import LoginErrorDTOSchema from '/home/loadt/node/src/models/LoginReqDTOSchema.js';
+
 
 async function LoginRequest(username, password) {
     const url = 'https://capital-homologacao.conexos.cloud/login';
