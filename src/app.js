@@ -7,7 +7,7 @@ const app = express();
 
 const router = express.Router();
 
-import index from './routes/index.js';
+import index from './controllers/';
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:false}));

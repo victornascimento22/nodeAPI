@@ -1,0 +1,10 @@
+'use strict'
+
+import express from 'express';
+const router = express.Router();
+
+import controller from '/home/loadt/node/src/controllers/logincontroller';
+
+router.post('/', controller.post);
+
+export default router;
