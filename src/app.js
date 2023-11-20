@@ -7,7 +7,7 @@ import bodyParser from 'body-parser';
 const app = express();
 const router = express.Router();
 
-import index from '/home/loadt/node/src/routes/index.js' // Corrija o nome do módulo para 'index'
+import index from '/home/loadt/node/src/routes/index.js'
 import login from '/home/loadt/node/src/routes/login-router.js'
 
 app.use(bodyParser.json());
