@@ -13,7 +13,7 @@ import login from '/home/loadt/node/src/routes/login-router.js'
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
-app.use('/', index); // Use o roteiro 'index' aqui
-app.use('/login', login); // Use o roteiro 'login' aqui
+app.use('/', index); 
+app.use('/login', login); 
 
 export default app;
